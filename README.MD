@@ -244,7 +244,7 @@ Pastikan environment Anda sudah memiliki:
 ### 1️⃣ Clone Repository
 ```bash
 git clone https://github.com/Itsjustrell/Transaction-Escrow-System.git
-cd transaction-escrow-system
+cd Transaction-Escrow-System
 ```
 
 ### 2️⃣ Install PHP Dependencies

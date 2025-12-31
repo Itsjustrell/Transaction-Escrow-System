@@ -319,6 +319,7 @@ class EscrowActionController extends Controller
 
     public function resolveDispute(Request $request, Escrow $escrow)
     {
+        /** @var \App\Models\User $user */
         $user = auth()->user();
 
         // 1. Pastikan user adalah arbiter
