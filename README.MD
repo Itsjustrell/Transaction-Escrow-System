@@ -125,14 +125,14 @@ Auto-release dijalankan sebagai **simulasi background processing** untuk memenuh
 Mekanisme penyelesaian sengketa secara adil dan terstruktur.
 
 **Checklist:**
-- [ ] Buyer: `delivered → disputed`
-- [ ] Create `escrow_disputes` record
-- [ ] Upload bukti dispute (file upload)
-- [ ] Arbiter review dispute & evidence
-- [ ] Arbiter: `disputed → released` atau `disputed → refunded`
-- [ ] Catat keputusan arbiter (status log & transaction log)
+- [x] Buyer: `delivered → disputed`
+- [x] Create `escrow_disputes` record
+- [x] Upload bukti dispute (file upload)
+- [x] Arbiter review dispute & evidence
+- [x] Arbiter: `disputed → released` atau `disputed → refunded`
+- [x] Catat keputusan arbiter (status log & transaction log)
 
-**Status:** ⏳ Belum
+**Status:** ✅ Selesai
 
 ---
 

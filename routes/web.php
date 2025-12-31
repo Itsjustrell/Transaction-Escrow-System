@@ -45,5 +45,15 @@ Route::post('/escrows/{escrow}/release',
     [EscrowActionController::class, 'release']
 )->middleware(['auth', 'role:buyer']);
 
+Route::post('/escrows/{escrow}/dispute',
+    [EscrowActionController::class, 'dispute']
+)->middleware(['auth', 'role:buyer']);
 
+Route::post('/escrows/{escrow}/dispute/evidence',
+    [EscrowActionController::class, 'uploadEvidence']
+)->middleware(['auth', 'role:buyer']);
+
+Route::post('/escrows/{escrow}/dispute/resolve',
+    [EscrowActionController::class, 'resolveDispute']
+)->middleware(['auth', 'role:arbiter']);
 require __DIR__.'/auth.php';

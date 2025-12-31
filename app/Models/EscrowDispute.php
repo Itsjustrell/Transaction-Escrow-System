@@ -9,6 +9,17 @@ class EscrowDispute extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'escrow_id', 'opened_by', 'reason', 'status', 'resolved_by', 'resolution', 'resolved_at'
+        'escrow_id',
+        'opened_by',
+        'reason',
+        'status',
+        'resolved_by',
+        'resolution',
+        'resolved_at'
     ];
+
+    public function evidences()
+    {
+        return $this->hasMany(DisputeEvidence::class, 'dispute_id');
+    }
 }

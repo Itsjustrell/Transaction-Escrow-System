@@ -9,6 +9,14 @@ class DisputeEvidence extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'dispute_id', 'uploaded_by', 'file_path', 'description'
+        'dispute_id',
+        'uploaded_by',
+        'file_path',
+        'description'
     ];
+
+    public function dispute()
+    {
+        return $this->belongsTo(EscrowDispute::class, 'dispute_id');
+    }
 }
