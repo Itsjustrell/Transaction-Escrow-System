@@ -243,15 +243,15 @@ Pastikan environment Anda sudah memiliki:
 
 ### 1️⃣ Clone Repository
 ```bash
-git clone <repository-url>
+git clone https://github.com/Itsjustrell/Transaction-Escrow-System.git
 cd transaction-escrow-system
 ```
 
 ### 2️⃣ Install PHP Dependencies
 ```bash
 composer install
-Ini akan meng-generate folder vendor/ berdasarkan composer.json.
 ```
+Ini akan meng-generate folder vendor/ berdasarkan composer.json
 
 ### 3️⃣ Setup Environment File
 Salin file environment contoh:
