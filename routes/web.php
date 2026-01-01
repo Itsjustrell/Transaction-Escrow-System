@@ -29,9 +29,9 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::post('/escrows/{escrow}/fund', 
+Route::post('/escrows/{escrow}/fund',
     [EscrowActionController::class, 'fund']
-)->middleware(['auth', 'role:buyer']);
+)->middleware(['auth', 'role:buyer', 'escrow.state:created']);
 
 Route::post('/escrows/{escrow}/ship',
     [EscrowActionController::class, 'ship']

@@ -281,9 +281,9 @@ class EscrowActionController extends Controller
         $user = auth()->user();
 
         // 1. Pastikan escrow sedang disputed
-        if ($escrow->status !== EscrowStatus::DISPUTED) {
-            abort(400, 'Escrow is not in disputed state.');
-        }
+        // if ($escrow->status !== EscrowStatus::DISPUTED) {
+        //     abort(400, 'Escrow is not in disputed state.');
+        // }
 
         // 2. Ambil dispute (harus ada)
         $dispute = $escrow->dispute;
@@ -328,9 +328,9 @@ class EscrowActionController extends Controller
         }
 
         // 2. Pastikan escrow sedang disputed
-        if ($escrow->status !== EscrowStatus::DISPUTED) {
-            abort(400, 'Escrow is not in disputed state.');
-        }
+        // if ($escrow->status !== EscrowStatus::DISPUTED) {
+        //     abort(400, 'Escrow is not in disputed state.');
+        // }
 
         // 3. Ambil dispute (harus open)
         $dispute = $escrow->dispute;
