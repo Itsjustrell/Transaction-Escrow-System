@@ -140,9 +140,9 @@ Mekanisme penyelesaian sengketa secara adil dan terstruktur.
 Validasi state escrow sebelum controller dijalankan.
 
 **Checklist:**
-- [ ] Middleware `EnsureEscrowState`
-- [ ] Validasi state di level route
-- [ ] Kombinasi dengan role middleware
+- [x] Middleware `EnsureEscrowState`
+- [x] Validasi state di level route
+- [x] Kombinasi dengan role middleware
 
 **Status:** ⏳ Belum
 
